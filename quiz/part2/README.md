@@ -1,4 +1,4 @@
-# Logic Challenge tanpa tipe data object | Part 2
+9# Logic Challenge tanpa tipe data object | Part 2
 
 Sabar wkwk
 

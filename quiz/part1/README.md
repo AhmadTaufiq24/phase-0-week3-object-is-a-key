@@ -8,14 +8,29 @@ Sabar jangan langsung ke object dulu, kalian harus asah logic lagi wkwk
 //cek google bagi yang ga tau apa itu angka prima
 function angkaPrima(angka) {
   // you can only write your code here!
+  if (n <= 1) {
+    return false;
+  } else if (n === 2) {
+    return true;
+  } else if (n % 2 === 0) {
+    return false;
+  }
+
+  const limit = Math.sqrt(n);
+  for (let i = 3; i <= limit; i += 2) {
+    if (n % i === 0) {
+      return false;
+    }
+  }
+  return true;
 }
 
 // TEST CASES
-console.log(angkaPrima(3)); // true
+console.log(angkaPrima(3)); // true 
 console.log(angkaPrima(7)); // true
-console.log(angkaPrima(6)); // false
-console.log(angkaPrima(23)); // true
-console.log(angkaPrima(33)); // false
+console.log(angkaPrima(6)); // false 
+console.log(angkaPrima(23)); // true 
+console.log(angkaPrima(33)); // false 
 ```
 ## Soal 2
 ```js
